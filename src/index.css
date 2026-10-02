@@ -1,0 +1,74 @@
+/* Global Reset and Typography Variables */
+:root {
+  --bg-primary: #f8f3f0;
+  --bg-sand-light: #ffedd5;
+  --bg-sand-warm: #f1dcc6;
+  --bg-sand-golden: #f4e0bc;
+  --bg-dark: #363030;
+  --text-dark: #000000;
+  --text-title: #363030;
+  --text-light: #ffffff;
+  --text-muted: rgba(0, 0, 0, 0.54);
+  --text-dim: #808080;
+  --border-dark: #4e4b4b;
+
+  --font-jura: 'Jura', sans-serif;
+  --font-kaisei: 'Kaisei HarunoUmi', serif;
+  --font-koho: 'KoHo', sans-serif;
+  --font-kiwi: 'Kiwi Maru', serif;
+  --font-dhyana: 'Dhyana', sans-serif;
+  --font-jacques: 'Jacques Francois', serif;
+  --font-josefin: 'Josefin Slab', serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--bg-primary);
+  color: var(--text-dark);
+  font-family: var(--font-koho), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+input {
+  font-family: inherit;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Base page container for 1920px Figma canvas */
+.figma-page-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}

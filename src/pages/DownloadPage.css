@@ -1,0 +1,260 @@
+/* DownloadPage Styles */
+.download-page {
+  background-color: var(--bg-primary);
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 1. Hero Section */
+.download-hero-section {
+  width: 100%;
+  min-height: clamp(500px, 39.4vw, 757px);
+  position: relative;
+  background-color: var(--bg-primary);
+  padding: clamp(40px, 4.5vw, 87px) clamp(20px, 4.16vw, 80px) clamp(20px, 2vw, 40px) clamp(20px, 4.16vw, 80px);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.download-main-title {
+  font-family: var(--font-kaisei);
+  font-size: clamp(36px, 3.33vw, 64px);
+  font-weight: 500;
+  color: var(--text-title);
+  text-align: center;
+  line-height: 100%;
+  margin-bottom: clamp(20px, 2vw, 40px);
+}
+
+.download-hero-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 clamp(10px, 3.12vw, 60px);
+  gap: clamp(20px, 3vw, 50px);
+}
+
+.download-filter-col {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 2vw, 40px);
+}
+
+.catalogues-title-wrap {
+  display: inline-block;
+}
+
+.catalogues-heading {
+  font-family: var(--font-kaisei);
+  font-size: clamp(36px, 3.33vw, 64px);
+  font-weight: 500;
+  color: var(--text-title);
+  line-height: 100%;
+  margin-bottom: 12px;
+}
+
+.catalogues-underline-short {
+  width: clamp(90px, 7.6vw, 147px);
+  height: 2px;
+  background-color: #363030;
+}
+
+.filter-dropdown-container {
+  position: relative;
+  width: 100%;
+  max-width: 413px;
+}
+
+.filter-dropdown-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-bottom: 8px;
+}
+
+.filter-label {
+  font-family: var(--font-koho);
+  font-size: clamp(20px, 1.875vw, 36px);
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 100%;
+}
+
+.filter-arrow {
+  width: clamp(18px, 1.5vw, 29px);
+  height: clamp(18px, 1.5vw, 29px);
+  transition: transform 0.2s ease;
+}
+
+.filter-arrow.rotated {
+  transform: rotate(180deg);
+}
+
+.filter-underline-long {
+  width: 100%;
+  max-width: 413px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.filter-options-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  max-width: 413px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 50;
+}
+
+.filter-opt {
+  padding: 14px 20px;
+  font-family: var(--font-koho);
+  font-size: clamp(16px, 1.25vw, 24px);
+  color: #333333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.filter-opt:hover, .filter-opt.active {
+  background-color: #f8f3f0;
+  font-weight: 600;
+}
+
+.download-mockup-col {
+  width: 48%;
+  max-width: 721px;
+  height: clamp(340px, 28vw, 541px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-mockup-card {
+  width: 100%;
+  max-width: 514px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mockup-img {
+  width: 100%;
+  height: auto;
+  max-height: 514px;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
+}
+
+/* 2. Catalogues Grid Section */
+.download-catalogues-section {
+  width: 100%;
+  padding: clamp(30px, 3.12vw, 60px) clamp(20px, 4.16vw, 80px) 0 clamp(20px, 4.16vw, 80px);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.itaca-banner-container {
+  width: 100%;
+  max-width: 721px;
+  height: clamp(60px, 5.2vw, 100px);
+  margin-bottom: clamp(24px, 2.6vw, 50px);
+  display: flex;
+  align-items: center;
+}
+
+.itaca-title {
+  font-family: var(--font-jura);
+  font-size: clamp(36px, 3.33vw, 64px);
+  font-weight: 500;
+  color: var(--text-title);
+  line-height: 100%;
+}
+
+.catalogues-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(40px, 4.16vw, 80px) clamp(40px, 7.29vw, 140px);
+  margin-bottom: clamp(60px, 6.25vw, 120px);
+}
+
+.catalogue-item-card {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 1vw, 20px);
+}
+
+.catalogue-img-box {
+  width: 100%;
+  height: clamp(260px, 24.1vw, 463px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.catalogue-preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.catalogue-item-card:hover .catalogue-preview-img {
+  transform: scale(1.03);
+}
+
+.catalogue-footer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+}
+
+.catalogue-name {
+  font-family: var(--font-jura);
+  font-size: clamp(24px, 2.5vw, 48px);
+  font-weight: 400;
+  color: #000000;
+  line-height: 100%;
+}
+
+.catalogue-download-btn {
+  width: clamp(32px, 2.5vw, 48px);
+  height: clamp(32px, 2.5vw, 48px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.catalogue-download-btn:hover {
+  transform: scale(1.15);
+}
+
+.download-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Responsive breakpoint for Tablets */
+@media (max-width: 900px) {
+  .download-hero-body {
+    flex-direction: column;
+  }
+  .download-mockup-col {
+    width: 100%;
+  }
+  .catalogues-grid {
+    grid-template-columns: 1fr;
+  }
+}
