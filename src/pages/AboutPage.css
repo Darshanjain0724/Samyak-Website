@@ -585,32 +585,147 @@
   object-fit: contain;
 }
 
-/* Responsive breakpoint for Tablets */
-@media (max-width: 1000px) {
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .about-hero-tiles-left,
+  .about-hero-tiles-right {
+    opacity: 0.5;
+    transform: scale(0.85);
+  }
+
   .about-offer-section {
     flex-direction: column;
     height: auto;
   }
-  .offer-image-box, .offer-text-box {
+
+  .offer-image-box {
     width: 100%;
     height: auto;
+    padding: 24px;
+    justify-content: center;
   }
+
+  .offer-img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    border-radius: 16px;
+  }
+
+  .offer-text-box {
+    width: 100%;
+    height: auto;
+    padding: 40px 30px;
+  }
+
+  .partners-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .partner-card {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    min-height: 480px;
+  }
+
+  .partner-img-wrap {
+    width: 100%;
+    height: 340px;
+  }
+
+  .testimonials-grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .testimonial-card.card-side,
+  .testimonial-card.card-center {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-tiles-left,
+  .about-hero-tiles-right {
+    display: none;
+  }
+
+  .about-hero-section {
+    padding: 40px 20px 30px 20px;
+    min-height: auto;
+  }
+
+  .about-intro-wrap {
+    padding: 0 10px;
+  }
+
+  .about-intro-text {
+    text-align: left;
+  }
+
   .about-stats-section {
     flex-direction: column;
     height: auto;
     gap: 40px;
+    padding: 20px;
+    margin-top: 50px;
   }
-  .partners-grid {
+
+  .vision-card-wrap {
+    padding: 30px 20px;
+    min-height: auto;
+    border-radius: 18px;
+  }
+
+  .vision-card-header {
+    gap: 16px;
+  }
+
+  .vision-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .associates-banner-container {
+    height: auto;
+    padding: 20px 12px;
+    border-radius: 18px;
+  }
+
+  .associates-logos-track {
+    gap: 16px;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
   }
-  .partner-card {
-    width: 48%;
-    margin-bottom: 20px;
-  }
-  .testimonials-grid {
-    flex-direction: column;
-  }
-  .testimonial-card.card-side, .testimonial-card.card-center {
-    width: 100%;
+
+  .assoc-logo-img {
+    max-height: 60px;
+    max-width: 130px;
   }
 }
+
+@media (max-width: 540px) {
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-card {
+    min-height: auto;
+    padding: 24px 16px;
+  }
+
+  .partner-img-wrap {
+    height: 280px;
+  }
+
+  .assoc-arrow-btn {
+    display: none;
+  }
+}
+
