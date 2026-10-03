@@ -1,7 +1,9 @@
 .footer-wrapper {
   width: 100%;
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/footer_bg.jpg');
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/assets/footer_bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -113,7 +115,9 @@
   justify-content: center;
   padding: 0;
   flex-shrink: 0;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .footer-send-button:hover {
@@ -184,7 +188,9 @@
   font-weight: 300;
   color: #ffffff;
   line-height: 120%;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
   display: inline-block;
 }
 
